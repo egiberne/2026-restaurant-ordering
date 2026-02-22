@@ -1,0 +1,70 @@
+body{
+    margin :0;
+    font-family:  "Smythe", system-ui, Times, serif ;
+}
+
+
+.background{
+    background-image: url(./images/black-burger.png);
+    background-size: cover;
+    
+}
+
+.container {
+    
+    width: 600px;
+    margin : 0 auto;
+    
+}
+
+
+.description{
+
+    color:white;
+    width:500px;
+    margin: 40px 40px 40px 40px ;
+    padding: 10px;
+}
+
+h1{
+    font-size: 40px;
+}
+h2{
+    font-size: 24px;
+}
+
+.main {
+    color:black;
+}
+
+.meal{
+    display:flex;
+    width:500px;
+    margin: 0 auto;
+    border-bottom: solid #3C3C3C 1px;
+    padding : 50px 0 50px 0;
+}
+
+.emoji{
+    font-size: 80px;
+}
+
+ul{
+    list-style-type: none;
+}
+
+button{
+    border-radius: 50%;
+    width:50px;
+    height:50px;
+    border-color:#3C3C3C ;
+    color:#3C3C3C;
+    background-color:#DEDEDE;
+    font-size: 32px;
+    border: solid 1px;
+    margin-left:auto
+}
+
+.ingredients{
+    color:#8B8B8B;
+}
