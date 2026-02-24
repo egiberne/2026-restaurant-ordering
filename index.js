@@ -1,8 +1,9 @@
 import menuArray from "/data.js"
 
-console.log(menuArray)
+//console.log(menuArray)
 
-const main = document.getElementById('main')
+const menu = document.getElementById('menu')
+const order = document.getElementById('order')
 
 function renderHtmlMenu (){
     let htmlMenu =``
@@ -17,22 +18,22 @@ function renderHtmlMenu (){
                 emoji
             } = item
 
-        console.log(`
-                ${name} ,
-                ${ingredients} ,
-                ${id} ,
-                ${price} ,
-                ${emoji} `)
+        // console.log(`
+        //         ${name} ,
+        //         ${ingredients} ,
+        //         ${id} ,
+        //         ${price} ,
+        //         ${emoji} `)
 
         htmlMenu +=`
-            <div class="meal">
+            <div id=${id} class="meal" >
                 <div class="emoji">${emoji} </div> 
                 <ul class="details">
-                    <li class="name">${name} </li> 
+                    <li id=${name} class="name">${name} </li> 
                     <li class="ingredients">${ingredients}</li> 
                     <li class="price">${price} </li>
                 </ul>
-                <button id="${id}" class="button-plus">+</button>
+                <button  class="plus" data-plus="${name}">+</button>
             </div>
           
             `
@@ -43,11 +44,28 @@ function renderHtmlMenu (){
 }
 
 
-main.innerHTML=renderHtmlMenu()
 
+menu.addEventListener('click',function(e){
+    let htmlOrder
 
-document.addEventListener(function(e){
+    if(e.target.dataset.plus){
+        //console.log(e.target.dataset.plus)
+        htmlOrder= `<div> ${e.target.dataset.plus} </div>`
+    }
 
+    order.innerHTML= htmlOrder
 
 
 })
+
+
+function renderHtmlOrder(html){
+
+
+    return html
+}
+
+
+
+menu.innerHTML=renderHtmlMenu()
+
