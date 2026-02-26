@@ -62,9 +62,9 @@ ul{
     height:50px;
     border-color:#3C3C3C ;
     color:#3C3C3C;
-    background-color:#DEDEDE;
+    background-color: white;
     font-size: 32px;
-    border: solid 1px;
+    border: solid 1px #DEDEDE;
     margin-left:auto
 }
 .plus:hover{
@@ -72,6 +72,7 @@ ul{
     color:white;
 }
 
+ 
 .complete{
      background-color: #16DB99;
      color:white;
@@ -82,10 +83,7 @@ ul{
      border: none;
      width: 500px;
      height: 60px;
-
-}
-.plus:hover{
-    background-color:#DEDEDE;
+    
 }
 
 .ingredients{
@@ -95,13 +93,21 @@ ul{
 
 .checkout{
     width: 500px;
-    border-bottom: solid black;
+    display :none;
+   
 }
 .total{
-    width: 500px;
-    padding:20px;
+    
+    border-top: solid  #3C3C3C ;
+    padding-bottom : 40px;
+}
+
+.complete:hover{ 
+    background-color:  #DEDEDE;
+    color: #3C3C3C ;
     
 }
+
 
 
 

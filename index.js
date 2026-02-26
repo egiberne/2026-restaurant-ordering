@@ -1,9 +1,9 @@
 import menuArray from "/data.js"
 
-//console.log(menuArray)
 
 const menu = document.getElementById('menu')
 const order = document.getElementById('order')
+const checkout= document.getElementById('checkout')
 
 function renderHtmlMenu (){
     let htmlMenu =``
@@ -18,22 +18,15 @@ function renderHtmlMenu (){
                 emoji
             } = item
 
-        // console.log(`
-        //         ${name} ,
-        //         ${ingredients} ,
-        //         ${id} ,
-        //         ${price} ,
-        //         ${emoji} `)
-
         htmlMenu +=`
-            <div id=${id} class="meal" >
+            <div class="meal" >
                 <div class="emoji">${emoji} </div> 
                 <ul class="details">
                     <li id=${name} class="name">${name} </li> 
                     <li class="ingredients">${ingredients}</li> 
                     <li class="price">${price} </li>
                 </ul>
-                <button  class="plus" data-plus="${name}">+</button>
+                <button  class="plus" data-${name}="${name}">+</button>
             </div>
           
             `
@@ -44,15 +37,27 @@ function renderHtmlMenu (){
 }
 
 
+let htmlOrder =``
+document.addEventListener('click',function(e){
+  
 
-menu.addEventListener('click',function(e){
-    let htmlOrder
+    if(e.target.dataset.burrito){
+        checkout.style.display = "block";
+        console.log(e.target.dataset.burrito)
+        htmlOrder+= `<div> ${e.target.dataset.burrito} </div>`
 
-    if(e.target.dataset.plus){
-        //console.log(e.target.dataset.plus)
-        htmlOrder= `<div> ${e.target.dataset.plus} </div>`
+     } else if(e.target.dataset.hamburger) {
+        checkout.style.display = "block";
+        console.log(e.target.dataset.hamburger)
+        htmlOrder+= `<div> ${e.target.dataset.hamburger} </div>`
+
+    } else if(e.target.dataset.beer){
+        checkout.style.display = "block";
+        console.log(e.target.dataset.beer)
+        htmlOrder+= `<div> ${e.target.dataset.beer} </div>`
     }
 
+    console.log(htmlOrder)
     order.innerHTML= htmlOrder
 
 
