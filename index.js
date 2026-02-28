@@ -22,11 +22,11 @@ function renderHtmlMenu (){
             <div class="meal" >
                 <div class="emoji">${emoji} </div> 
                 <ul class="details">
-                    <li id=${name} class="name">${name} </li> 
+                    <li class="name">${name} </li> 
                     <li class="ingredients">${ingredients}</li> 
                     <li class="price">${price} </li>
                 </ul>
-                <button  class="plus" data-${name}="${name}">+</button>
+                <button  class="plus" data-menu="${name}">+</button>
             </div>
           
             `
@@ -39,25 +39,47 @@ function renderHtmlMenu (){
 
 let htmlOrder =``
 document.addEventListener('click',function(e){
-  
+    let matchingPrice =``
+   
 
-    if(e.target.dataset.burrito){
+    if(e.target.dataset.menu==='Burrito'){
+        matchingPrice = getPrice(e.target.dataset.menu)
+        console.log(matchingPrice)
         checkout.style.display = "block";
-        console.log(e.target.dataset.burrito)
-        htmlOrder+= `<div> ${e.target.dataset.burrito} </div>`
+        //console.log(e.target.dataset.burrito)
+        htmlOrder+= `
+            <div> ${e.target.dataset.menu} </div>
+            <button> remove </button>
+            <span> $${matchingPrice}</span>
+        
+        `
 
-     } else if(e.target.dataset.hamburger) {
+     } else if(e.target.dataset.menu==='Hamburger'){
+        matchingPrice = getPrice(e.target.dataset.menu)
+        console.log(matchingPrice)
         checkout.style.display = "block";
-        console.log(e.target.dataset.hamburger)
-        htmlOrder+= `<div> ${e.target.dataset.hamburger} </div>`
+        //console.log(e.target.dataset.burrito)
+        htmlOrder+= `
+            <div> ${e.target.dataset.menu} </div>
+            <button> remove </button>
+            <span> $${matchingPrice}</span>
+        
+        `
 
-    } else if(e.target.dataset.beer){
+    } else if(e.target.dataset.menu==='Beer'){
+        matchingPrice = getPrice(e.target.dataset.menu)
+        console.log(matchingPrice)
         checkout.style.display = "block";
-        console.log(e.target.dataset.beer)
-        htmlOrder+= `<div> ${e.target.dataset.beer} </div>`
+         
+        htmlOrder+= `
+            <div> ${e.target.dataset.menu} </div>
+            <button> remove </button>
+            <span> $${matchingPrice}</span>
+        
+        `
     }
 
-    console.log(htmlOrder)
+    
     order.innerHTML= htmlOrder
 
 
@@ -73,4 +95,15 @@ function renderHtmlOrder(html){
 
 
 menu.innerHTML=renderHtmlMenu()
+
+function getPrice(menuName){
+  const matchingMenu = menuArray.filter(function(menu){
+        if(menu.name === menuName){
+             return menu
+        }
+
+    } )[0]
+    console.log(matchingMenu)
+    return  matchingMenu.price
+}
 

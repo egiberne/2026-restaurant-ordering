@@ -9,7 +9,7 @@ const menuArray = [
     {
         name: "Hamburger",
         ingredients: ["beef", "cheese", "lettuce"],
-        price: 12,
+        price: 13,
         emoji: "🍔",
         id: 1
     },
