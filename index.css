@@ -108,6 +108,24 @@ ul{
     
 }
 
+.item{
+    display: flex;
+    flex-direction: row;
+  
+}
 
+.remove{
+     color:#8B8B8B;
+    background-color: white;
+    font-size: small;
+      border: none;
+}
 
+.remove:hover{
+    color: #16DB99;
+}
+
+.price{
+    margin-left:auto;
+}
 

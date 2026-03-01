@@ -46,36 +46,36 @@ document.addEventListener('click',function(e){
         matchingPrice = getPrice(e.target.dataset.menu)
         console.log(matchingPrice)
         checkout.style.display = "block";
-        //console.log(e.target.dataset.burrito)
         htmlOrder+= `
-            <div> ${e.target.dataset.menu} </div>
-            <button> remove </button>
-            <span> $${matchingPrice}</span>
-        
+            <div class="item">
+                <div> ${e.target.dataset.menu} </div>
+                <button class="remove"> remove </button>
+                <div class="price"> $${matchingPrice}</div>
+            </div>
         `
 
      } else if(e.target.dataset.menu==='Hamburger'){
         matchingPrice = getPrice(e.target.dataset.menu)
         console.log(matchingPrice)
         checkout.style.display = "block";
-        //console.log(e.target.dataset.burrito)
         htmlOrder+= `
-            <div> ${e.target.dataset.menu} </div>
-            <button> remove </button>
-            <span> $${matchingPrice}</span>
-        
+            <div class="item">
+                <div> ${e.target.dataset.menu} </div>
+                <button class="remove"> remove </button>
+                <div class="price"> $${matchingPrice}</div>
+            </div>
         `
 
     } else if(e.target.dataset.menu==='Beer'){
         matchingPrice = getPrice(e.target.dataset.menu)
         console.log(matchingPrice)
         checkout.style.display = "block";
-         
         htmlOrder+= `
-            <div> ${e.target.dataset.menu} </div>
-            <button> remove </button>
-            <span> $${matchingPrice}</span>
-        
+            <div class="item">
+                <div> ${e.target.dataset.menu} </div>
+                <button class="remove"> remove </button>
+                <div class="price"> $${matchingPrice}</div>
+            </div>
         `
     }
 

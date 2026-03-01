@@ -4,6 +4,14 @@ See all notable changes to this project documented in this file.
 
 ## [Unreleased]
 
+## [0.0.5] - 2026-03.01
+
+### Added
+- Implement the CSS design for remove button.
+- Implement the  CSS design to disply the price all the way the the right side.
+
+### Removed
+- Change the Html structure to use elements, `<div>` instead of `<span>`
 
 ## [0.0.4] - 2026-02-28
 

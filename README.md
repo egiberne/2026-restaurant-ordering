@@ -1,5 +1,5 @@
 
-# Restaurant Ordering Hero 🌐
+# Restaurant Ordering Hero 🍴
 _A responsive and accessible Menu app to order food._
 
 ## ✨ Built To
