@@ -40,43 +40,35 @@ function renderHtmlMenu (){
 let htmlOrder =``
 document.addEventListener('click',function(e){
     let matchingPrice =``
+    let matchingMenu =``
    
 
     if(e.target.dataset.menu==='Burrito'){
         matchingPrice = getPrice(e.target.dataset.menu)
-        console.log(matchingPrice)
+        matchingMenu =  e.target.dataset.menu
+
         checkout.style.display = "block";
-        htmlOrder+= `
-            <div class="item">
-                <div> ${e.target.dataset.menu} </div>
-                <button class="remove"> remove </button>
-                <div class="price"> $${matchingPrice}</div>
-            </div>
-        `
+
+        htmlOrder+=renderHtmlOrder(matchingMenu,matchingPrice)
+        // htmlOrder+= `
+        //     <div class="item">
+        //         <div> ${ matchingMenu} </div>
+        //         <button class="remove"> remove </button>
+        //         <div class="price"> $${matchingPrice}</div>
+        //     </div>
+        // `
 
      } else if(e.target.dataset.menu==='Hamburger'){
         matchingPrice = getPrice(e.target.dataset.menu)
-        console.log(matchingPrice)
+        matchingMenu =  e.target.dataset.menu 
         checkout.style.display = "block";
-        htmlOrder+= `
-            <div class="item">
-                <div> ${e.target.dataset.menu} </div>
-                <button class="remove"> remove </button>
-                <div class="price"> $${matchingPrice}</div>
-            </div>
-        `
+        htmlOrder+= renderHtmlOrder(matchingMenu,matchingPrice)
 
     } else if(e.target.dataset.menu==='Beer'){
         matchingPrice = getPrice(e.target.dataset.menu)
-        console.log(matchingPrice)
+        matchingMenu =  e.target.dataset.menu
         checkout.style.display = "block";
-        htmlOrder+= `
-            <div class="item">
-                <div> ${e.target.dataset.menu} </div>
-                <button class="remove"> remove </button>
-                <div class="price"> $${matchingPrice}</div>
-            </div>
-        `
+        htmlOrder+= renderHtmlOrder(matchingMenu,matchingPrice)
     }
 
     
@@ -86,11 +78,19 @@ document.addEventListener('click',function(e){
 })
 
 
-function renderHtmlOrder(html){
+function renderHtmlOrder(itemName, itemPrice){
 
+    const htmlItem =`
+            <div class="item">
+                <div> ${itemName} </div>
+                <button class="remove"> remove </button>
+                <div class="price"> $${itemPrice}</div>
+            </div>
+        `
 
-    return html
+    return htmlItem
 }
+
 
 
 

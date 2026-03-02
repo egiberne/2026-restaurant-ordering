@@ -4,6 +4,11 @@ See all notable changes to this project documented in this file.
 
 ## [Unreleased]
 
+## [0.0.6] - 2026-03.02
+
+### Added
+- Implement function to render the item ordered
+
 ## [0.0.5] - 2026-03.01
 
 ### Added
