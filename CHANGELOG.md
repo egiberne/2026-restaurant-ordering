@@ -4,6 +4,14 @@ See all notable changes to this project documented in this file.
 
 ## [Unreleased]
 
+## [0.0.7] - 2026-03.15
+
+### Added
+- Implement new `ID` in HTML and JS code to controle the elements
+
+### Fixed
+- Correct the error catch when ordering a Burrito
+
 ## [0.0.6] - 2026-03.02
 
 ### Added

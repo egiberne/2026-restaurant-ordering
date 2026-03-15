@@ -1,9 +1,16 @@
 import menuArray from "/data.js"
 
+let orders=[]
+
+let numberBurrito=1
+let numberHamburger=1
+let numberBeer=1
+let cost=0
 
 const menu = document.getElementById('menu')
 const order = document.getElementById('order')
 const checkout= document.getElementById('checkout')
+const totalPrice=document.getElementById('total-price')
 
 function renderHtmlMenu (){
     let htmlMenu =``
@@ -43,52 +50,59 @@ document.addEventListener('click',function(e){
     let matchingMenu =``
    
 
-    if(e.target.dataset.menu==='Burrito'){
+    if(e.target.dataset.menu==='Burrito' ){
         matchingPrice = getPrice(e.target.dataset.menu)
         matchingMenu =  e.target.dataset.menu
-
         checkout.style.display = "block";
+        orders.push('burrito')
+        htmlOrder+=renderHtmlOrder(matchingMenu,matchingPrice,numberBurrito++)
 
-        htmlOrder+=renderHtmlOrder(matchingMenu,matchingPrice)
-        // htmlOrder+= `
-        //     <div class="item">
-        //         <div> ${ matchingMenu} </div>
-        //         <button class="remove"> remove </button>
-        //         <div class="price"> $${matchingPrice}</div>
-        //     </div>
-        // `
-
-     } else if(e.target.dataset.menu==='Hamburger'){
+     } else if(e.target.dataset.menu==='Hamburger' ){
         matchingPrice = getPrice(e.target.dataset.menu)
         matchingMenu =  e.target.dataset.menu 
         checkout.style.display = "block";
-        htmlOrder+= renderHtmlOrder(matchingMenu,matchingPrice)
+        orders.push('hamburger')
+        htmlOrder+= renderHtmlOrder(matchingMenu,matchingPrice,numberHamburger++)
 
     } else if(e.target.dataset.menu==='Beer'){
         matchingPrice = getPrice(e.target.dataset.menu)
         matchingMenu =  e.target.dataset.menu
         checkout.style.display = "block";
-        htmlOrder+= renderHtmlOrder(matchingMenu,matchingPrice)
+        orders.push('beer')
+        htmlOrder+= renderHtmlOrder(matchingMenu,matchingPrice,numberBeer++)
+
     }
 
-    
+    //cost = numberBuritto*14 + numberHamburger*13 + numberBeer*12 
+
+    //totalPrice.innerHTML = <div> ${cost}</div> 
     order.innerHTML= htmlOrder
 
 
 })
 
 
-function renderHtmlOrder(itemName, itemPrice){
+function renderHtmlOrder(itemName, itemPrice, itemNumber){
 
-    const htmlItem =`
-            <div class="item">
-                <div> ${itemName} </div>
-                <button class="remove"> remove </button>
-                <div class="price"> $${itemPrice}</div>
-            </div>
-        `
+        const htmlItem =`
+                <div id="item" class="item">
+                    <div id="item-nanme"> ${itemName} </div>
+                    <div id="item-number"> [${itemNumber}] </div>
+                    <button id="remove" class="remove"> remove </button>
+                    <div id="price" class="price"> $${itemPrice}</div>
+                </div>
+            `
+    
 
     return htmlItem
+}
+
+
+function renderHtmlTotal(){
+        cost = numberBuritto*14 + numberHamburger*13 + numberBeer*12 
+
+        
+
 }
 
 
