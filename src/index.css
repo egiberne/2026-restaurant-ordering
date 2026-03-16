@@ -3,6 +3,10 @@ body{
     font-family:  "Smythe", system-ui, Times, serif ;
 }
 
+footer{
+    text-align: center;
+    margin: 50px 0 50px 0;
+}
 
 .background{
     background-image: url(./images/black-burger.png);
@@ -96,10 +100,39 @@ ul{
     display :none;
    
 }
+
+
+.item-burrito{
+
+    display :none;
+    flex-direction: row;
+   
+}
+
+.item-burger{
+
+    display :none;
+    flex-direction: row;
+   
+}
+
+.item-beer{
+
+    display :none;
+    flex-direction: row;
+   
+}
+
 .total{
     
     border-top: solid  #3C3C3C ;
     padding-bottom : 40px;
+    display: flex;
+    flex-direction: row;
+}
+
+.total-cost{
+    margin-left:auto;
 }
 
 .complete:hover{ 

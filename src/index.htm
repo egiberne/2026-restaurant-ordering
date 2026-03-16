@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta description="Restaurant Ordering App.">
+        <meta name="viewport" content="width=device-width">
+        <title>Bumbo's Diner Menu!</title>
+        <link href="./index.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header id="header" class="header container background">
+
+            <div id="header" class="container">
+                <div id="description" class="description">
+                    <h1>Bumbo's Diner</h1>
+                    <h2>The best burgers and burritos in town.</h2>
+                </div>
+            </div>
+            
+            
+
+        </header>
+
+        <main>
+
+            <div id="menu" class="menu container">
+
+            </div>
+
+            
+            <div id="checkout" class="checkout container">
+                <h3 >Your Order</h3>
+                <div id="order" class="order"></div>
+
+                <div id="item-burrito" class="item-burrito">
+                    <div> Burrito </div>
+                    <div id="item-burrito-number"> [] </div>
+                    <button id="item-burrito-remove" class="remove"> remove </button>
+                    <div id="item-burrito-price" class="price"> $</div>
+                </div>
+
+                <div id="item-burger" class="item-burger">
+                    <div> Burger</div>
+                    <div id="item-burger-number"> [] </div>
+                    <button id="item-burger-remove" class="remove"> remove </button>
+                    <div id="item-burger-price" class="price"> $</div>
+                </div>
+
+                <div id="item-beer" class="item-beer">
+                    <div> Beer </div>
+                    <div id="item-beer-number"> [] </div>
+                    <button id="item-beer-remove" class="remove"> remove </button>
+                    <div id="item-beer-price" class="price"></div>
+                </div>
+
+
+                <div id="total" class=" total">
+                    <div>Total price:</div>
+                    <div id="total-cost" class="total-cost">$ 0</div>
+                   
+                </div>
+                <button id="complete" class="complete">Complete order</button>
+            </div>
+           
+
+            
+
+        </main>
+
+        <footer>
+            <div> copyrigth</div>
+        </footer>
+        
+        <script src="index.js" type="module"></script>
+    </body>
+</html>

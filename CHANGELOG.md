@@ -3,28 +3,43 @@
 See all notable changes to this project documented in this file.
 
 ## [Unreleased]
+ - Refortoring to DRY 
 
-## [0.0.7] - 2026-03.15
+## [0.0.8] - 2026-03-16
 
 ### Added
-- Implement new `ID` in HTML and JS code to controle the elements
+- Implement new HTML structure and JS code to add new ordered items.
+- Implement the total cost of the ordered items.
+- Improve the CSS design at the bottom.
+- Implement javascript to remove items.
+- Include a license agreement.
+- Include a folder source.
 
 ### Fixed
-- Correct the error catch when ordering a Burrito
+- Correct the price displayed with the dollar symbol.
+- Reorganize the files and folders in to the folder src.
 
-## [0.0.6] - 2026-03.02
+## [0.0.7] - 2026-03-15
 
 ### Added
-- Implement function to render the item ordered
+- Implement new `ID` in HTML and JS code to controle the elements.
 
-## [0.0.5] - 2026-03.01
+### Fixed
+- Correct the error catch when ordering a Burrito.
+
+## [0.0.6] - 2026-03-02
+
+### Added
+- Implement function to render the item ordered.
+
+## [0.0.5] - 2026-03-01
 
 ### Added
 - Implement the CSS design for remove button.
 - Implement the  CSS design to disply the price all the way the the right side.
 
 ### Removed
-- Change the Html structure to use elements, `<div>` instead of `<span>`
+- Change the Html structure to use elements, `<div>` instead of `<span>`.
 
 ## [0.0.4] - 2026-02-28
 
@@ -33,7 +48,7 @@ See all notable changes to this project documented in this file.
 - Implement the Html button to remove the ordered item.
 
 ### Removed
-- Change the price of the Hamburger
+- Change the price of the Hamburger.
 
 ## [0.0.3] - 2026-02-26
 
@@ -53,7 +68,7 @@ See all notable changes to this project documented in this file.
 
 ### Added
 
-- Initial upload files: CHANGELOG.md, README.md, index.css, index.htm, data.js
+- Initial upload files: CHANGELOG.md, README.md, index.css, index.htm, data.js.
 
 ### Deprecated
 ### Removed
