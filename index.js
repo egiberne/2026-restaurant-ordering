@@ -171,7 +171,7 @@ checkout.addEventListener('click', function(e){
      beerOrdered.pop()  
      beerOrdered.length ===0 ? itemBeer.style.display ='none': itemBeer.style.display ='flex'
      itemBeerNumber.innerHTML = `[${beerOrdered.length}]`
-     itemBurgerPrice.textContent= `$${12*beerOrdered.length}`
+     itemBeerPrice.textContent= `$${12*beerOrdered.length}`
      orders.splice(orders.indexOf('beer'),1)
      cost =  burritoOrdered.length *14 + burgerOrdered.length *13 +  beerOrdered.length *12 
      totalCost.textContent=`$ ${cost}`

@@ -6,7 +6,12 @@ See all notable changes to this project documented in this file.
  - Refortoring to DRY.
  - Have a payment modal with /mandatory inputs
 
-## [0.0.9] - 2026-03-17
+## [0.9.2] - 2026-03-17
+
+### Fixed
+- Correct price display for beer in checkout process
+
+## [0.9.1] - 2026-03-17
 
 ### Added
 - Implement a copyright for the footer.
@@ -15,7 +20,7 @@ See all notable changes to this project documented in this file.
 - Move the files to the root folder.
 - Correct the title in the README file.
 
-## [0.0.8] - 2026-03-16
+## [0.8.1] - 2026-03-16
 
 ### Added
 - Implement new HTML structure and JS code to add new ordered items.
@@ -29,7 +34,7 @@ See all notable changes to this project documented in this file.
 - Correct the price displayed with the dollar symbol.
 - Reorganize the files and folders in to the folder src.
 
-## [0.0.7] - 2026-03-15
+## [0.7.0] - 2026-03-15
 
 ### Added
 - Implement new `ID` in HTML and JS code to controle the elements.
@@ -37,12 +42,12 @@ See all notable changes to this project documented in this file.
 ### Fixed
 - Correct the error catch when ordering a Burrito.
 
-## [0.0.6] - 2026-03-02
+## [0.6.0] - 2026-03-02
 
 ### Added
 - Implement function to render the item ordered.
 
-## [0.0.5] - 2026-03-01
+## [0.5.0] - 2026-03-01
 
 ### Added
 - Implement the CSS design for remove button.
@@ -51,7 +56,7 @@ See all notable changes to this project documented in this file.
 ### Removed
 - Change the Html structure to use elements, `<div>` instead of `<span>`.
 
-## [0.0.4] - 2026-02-28
+## [0.4.0] - 2026-02-28
 
 ### Added
 - Implement function to collect the price of the ordered menu.
@@ -60,21 +65,21 @@ See all notable changes to this project documented in this file.
 ### Removed
 - Change the price of the Hamburger.
 
-## [0.0.3] - 2026-02-26
+## [0.3.0] - 2026-02-26
 
 ### Added
 - Refactor the sections: Checkout, Total section and Order.
 - Implement the collect of the ordered items.
 
 
-## [0.0.2] - 2026-02-24
+## [0.2.0] - 2026-02-24
 
 ### Added
 - Checkout section. and work on the CSS design.
 - Total section, and work on the CSS design.
 
 
-## [0.0.1] - 2026-02-21
+## [0.1.0] - 2026-02-21
 
 ### Added
 
