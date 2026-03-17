@@ -3,7 +3,17 @@
 See all notable changes to this project documented in this file.
 
 ## [Unreleased]
- - Refortoring to DRY 
+ - Refortoring to DRY.
+ - Have a payment modal with /mandatory inputs
+
+## [0.0.9] - 2026-03-17
+
+### Added
+- Implement a copyright for the footer.
+
+### Fixed
+- Move the files to the root folder.
+- Correct the title in the README file.
 
 ## [0.0.8] - 2026-03-16
 

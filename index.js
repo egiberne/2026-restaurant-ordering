@@ -224,7 +224,10 @@ function getPrice(menuName){
 }
 
 
-function remove(){
+const footer= document.getElementById('footer')
+const dateSnapshot = new Date()
 
+console.log(`Copyright ${dateSnapshot.getFullYear()}`)
 
-}
+footer.innerHTML=`<div> Copyright ${dateSnapshot.getFullYear()} <a href="https://github.com/egiberne/2026-restaurant-ordering" target="_blank"> egiberne</a>`
+

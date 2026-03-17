@@ -1,5 +1,5 @@
 
-# Restaurant Ordering Hero 🍴
+# Restaurant Ordering 🍴
 _A responsive and accessible Menu app to order food._
 
 ## ✨ Built To
@@ -13,7 +13,7 @@ Here are technologies:
 |Languages|HTML, CSS, JS|
 |Editor|VS Code|
 |Testing|Web Browser|
-|Database|Windows.localStorage|
+|Database|n/a|
 |AI|n/a|
 
 ## 📚 Built On
