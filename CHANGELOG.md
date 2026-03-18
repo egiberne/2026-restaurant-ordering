@@ -3,8 +3,13 @@
 See all notable changes to this project documented in this file.
 
 ## [Unreleased]
- - Refortoring to DRY.
+ - Refactoring to DRY.
  - Have a payment modal with /mandatory inputs
+
+
+## [0.10.0] - 2026-03-18
+
+- Implement the form for the modal window.
 
 ## [0.9.2] - 2026-03-17
 

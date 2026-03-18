@@ -23,6 +23,14 @@ Here are the concepts praticed :
 - [x] Implementing  
 - [x] Leverage 
 
+### References
+
+https://www.conventionalcommits.org/ 
+https://semver.org/
+https://keepachangelog.com/
+
+
+
 ## 📺Demo
 
 ### 🔍 Preview
