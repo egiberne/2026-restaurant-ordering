@@ -23,13 +23,6 @@ Here are the concepts praticed :
 - [x] Implementing  
 - [x] Leverage 
 
-### References
-
-https://www.conventionalcommits.org/ 
-https://semver.org/
-https://keepachangelog.com/
-
-
 
 ## 📺Demo
 
@@ -41,5 +34,11 @@ https://keepachangelog.com/
 
 ## Status
 ![Status](https://img.shields.io/badge/status-active-brightgreen)
+
+## References
+
+[Conventional Commits](https://www.conventionalcommits.org/) 
+[Semantic Version](https://semver.org/)
+[Keep Changelog](https://keepachangelog.com/)
 
 Happy Coding!

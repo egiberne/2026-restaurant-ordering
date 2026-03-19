@@ -7,7 +7,17 @@ See all notable changes to this project documented in this file.
  - Have a payment modal with /mandatory inputs
 
 
+## [0.11.0] - 2026-03-19
+
+### Added
+
+- ci(index.css) : improve the css design of the modal
+- docs(readme)  : change the the refence in markdown hyperlink
+
+
 ## [0.10.0] - 2026-03-18
+
+### Added
 
 - Implement the form for the modal window.
 
