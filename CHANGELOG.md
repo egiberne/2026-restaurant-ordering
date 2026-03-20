@@ -4,15 +4,28 @@ See all notable changes to this project documented in this file.
 
 ## [Unreleased]
  - Refactoring to DRY.
- - Have a payment modal with /mandatory inputs
+ - Have a payment modal with mandatory inputs
 
+
+
+## [0.12.0] - 2026-03-20
+
+## Added
+
+- feat (complete) : implement the fonctionnality of the complete button
+- style (modal) : implement the layout of the modal 
+
+### Fixed
+
+- docs (changelog) : change the type in the changelog for the previous commit
+- docs (reference) : update the wording and the position in the readme
 
 ## [0.11.0] - 2026-03-19
 
 ### Added
 
-- ci(index.css) : improve the css design of the modal
-- docs(readme)  : change the the refence in markdown hyperlink
+- feat (modal) : improve the css design of the modal
+- docs (readme)  : change the the refence in markdown hyperlink
 
 
 ## [0.10.0] - 2026-03-18

@@ -34,7 +34,15 @@ const itemBeerPrice = document.getElementById('item-beer-price')
 let beerOrdered 
 let numberBeer=1
 let orderBeers=[]
- 
+
+
+// complete
+const complete =document.getElementById('complete')
+// pay
+const buttonPay =document.getElementById('button-pay')
+
+//modal
+const modal = document.getElementById('modal')
 
 function renderHtmlMenu (){
     let htmlMenu =``
@@ -222,6 +230,21 @@ function getPrice(menuName){
     //console.log(matchingMenu)
     return  matchingMenu.price
 }
+
+
+complete.addEventListener('click',()=> modal.style.display='flex' )
+
+
+buttonPay.addEventListener('click', function(){
+    
+})
+
+
+
+
+
+
+
 
 
 const footer= document.getElementById('footer')

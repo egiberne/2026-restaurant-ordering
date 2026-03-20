@@ -32,13 +32,15 @@ Here are the concepts praticed :
 ### 🎮 Live
 [Demo](https://2026-restaurant-ordering.netlify.app/)
 
+
+
+## 🔗 References
+[Conventional Commits](https://www.conventionalcommits.org/) 
+[Semantic Versionning](https://semver.org/)
+[Keep Changelog](https://keepachangelog.com/)
+
+
 ## Status
 ![Status](https://img.shields.io/badge/status-active-brightgreen)
-
-## References
-
-[Conventional Commits](https://www.conventionalcommits.org/) 
-[Semantic Version](https://semver.org/)
-[Keep Changelog](https://keepachangelog.com/)
 
 Happy Coding!
