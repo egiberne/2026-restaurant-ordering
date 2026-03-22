@@ -6,7 +6,14 @@ See all notable changes to this project documented in this file.
  - Refactoring to DRY.
  - Have a payment modal with mandatory inputs
 
+## [0.13.0] - 2026-03-21
 
+## Added
+- feat(thanks) : implement the thanking message
+- refactor(plus)    : improve the add function
+
+## Remove
+chore(license)  : delete the extention
 
 ## [0.12.0] - 2026-03-20
 

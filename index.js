@@ -1,12 +1,13 @@
 import menuArray from "./data.js"
 
 const menu = document.getElementById('menu')
+const thanks = document.getElementById('thanks')
 
 // total
 const totalCost = document.getElementById('total-cost')
 const order = document.getElementById('order')
 const checkout= document.getElementById('checkout')
-let cost=0
+
 let orders=[]
 
 // burrito 
@@ -98,8 +99,10 @@ menu.addEventListener('click',function(e){
             }
         })
 
-        itemBurritoNumber.innerHTML = `[${burritoOrdered.length}]`
-        itemBurritoPrice.textContent= `$${matchingPrice*burritoOrdered.length}`
+        number =burritoOrdered.length
+
+        itemBurritoNumber.innerHTML = `[number ]`
+        itemBurritoPrice.textContent= `$${matchingPrice*number}`
 
      } else if(e.target.dataset.menu==='Hamburger' ){
         matchingPrice = getPrice(e.target.dataset.menu)
@@ -142,7 +145,7 @@ menu.addEventListener('click',function(e){
 
 
 
-    //cost = numberBuritto*14 + numberHamburger*13 + numberBeer*12 
+    let cost=0
     //totalPrice.innerHTML = <div> ${cost}</div> 
     order.innerHTML= htmlOrder
     cost = burritoOrdered.length *14 + burgerOrdered.length *13 +  beerOrdered.length *12  
@@ -236,6 +239,17 @@ complete.addEventListener('click',()=> modal.style.display='flex' )
 
 
 buttonPay.addEventListener('click', function(){
+
+    modal.style.display='none'
+    checkout.style.display='none'
+
+    const htmlThanks =`<div id="message" class="message"> Thanks, James! Your order is on its way!</div>`
+
+    thanks.style.display='block'
+    thanks.innerHTML=htmlThanks
+
+
+
     
 })
 
